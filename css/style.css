@@ -1,0 +1,2174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #05b4ff;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+/* Add this to your existing CSS file */
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(53, 52, 52, 0.555);
+    background-blend-mode: lighten;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+    z-index: 9999;
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navlist li {
+    margin-right: 25px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.navlist a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .navlist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #05b4ff;
+    --big-font: 5rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+/* Add this to your existing CSS file */
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(53, 52, 52, 0.555);
+    background-blend-mode: lighten;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+    z-index: 9999;
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navlist li {
+    margin-right: 25px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+
+.navlist a:hover {
+    color: var(--main-color);
+}
+
+.navlist a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .navlist {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .navlist li {
+        margin: 0;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+
+.home 
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slide {
+    margin-bottom: 20px;
+}
+
+.one {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+.two {
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 500;
+}
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 50%;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    /* your content styling */
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+
+}
+
+.home-text h3 {
+    color: rgb(84, 210, 241);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.home-text p {
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 5px #fff;
+}
+.button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+    .about-img img {
+        max-width: 530px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-img img {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-img img {
+        max-width: 870px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-img img {
+        max-width: 1030px;
+    }
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+    text-align: center;
+}
+
+.about-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+     text-align: center;
+}
+
+.about-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.services {
+    background: var(--second-bg-color);
+
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text p {
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.box {
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.s-icons i {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.box p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.skills-content {
+    margin: 0 auto;
+    margin-top: 35px;
+    max-width: 1000px; /* Adjust the maximum width */
+    width: 100%; /* Use 100% to make it responsive or set a fixed width */
+    box-shadow: none;
+    padding: 40px; /* Adjust the padding */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+.skills-content .box
+{
+    width: 150%;
+    height: auto;
+}
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+.row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #00a6ff);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h5 {
+    font: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+
+}
+
+.layer i {
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+.logo-img {
+    width: 64px; /* adjust the width to your liking */
+    height: auto; /* this will maintain the aspect ratio */
+    margin-right: 10px; /* add some space between the logo and the text */
+  }
+  
+  @media (max-width: 768px) {
+    .logo-img {
+      width: 24px; /* adjust the width for smaller screens */
+    }
+  }
+
+.row:hover img {
+    transform: scale(1.1);
+
+}
+
+.row:hover .layer {
+    height: 100%;
+}
+
+.contact {
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contact-text h4 {
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.contact-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.list {
+    margin-bottom: 2.8rem;
+
+}
+
+.list li {
+    margin-bottom: 12px;
+
+}
+
+.list li a {
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all .45s ease;
+}
+
+.list li a:hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+
+}
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+
+    color: var(--main-color);
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 240px;
+}
+
+.contact-form .submit {
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    transition: all .45s ease;
+}
+
+.contact-form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.end {
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.last-text p {
+    color: var(--second-color);
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.top i {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+@media (max-width: 1480px) {
+    header {
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+
+    section {
+        padding: 110px 3% 60px;
+    }
+
+    .end {
+        padding: 15px 3%;
+    }
+}
+@media (max-width: 1480px) {
+    header {
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+
+    /* adjust navigation for smaller screens */
+    .nav {
+        display: block; /* hide the navigation */
+    }
+
+    /* add a button to open the navigation on smaller screens */
+    .nav-toggle {
+        display: block;
+    }
+
+    section {
+        padding: 110px 3% 60px;
+    }
+
+    .end {
+        padding: 15px 3%;
+    }
+}
+@media (max-width: 1100px){
+    :root{
+        --big-font:4rem;
+        --h2-font:2.5rem;
+        --p-font:1rem;
+        transition: .1s;
+    }
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+    .home{
+        height: 87vh;
+    }
+}
+@media (max-width:920){
+    .about{
+        grid-template-columns: 1fr;
+
+    }
+    .about-img img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 480px){
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+        display: block;
+        width: 100%;
+        height:auto;
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color);
+    }
+    .navlist a:hover{
+        color: var(--main-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+
+.skills {
+    padding: 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: url("images/img/img6.jpg"); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.skills .skill-col {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 650px;
+    background-image: url("images/img/img6.jpg"); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    box-shadow: none;
+    padding: 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skills .skill-col .skill-item {
+    width: 100%;
+}
+
+.skills .skill-col .skill-item .skill {
+    position: relative;
+}
+
+.skills .skill-col .skill-item .skill::before {
+    content: '';
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    width: 120px;
+    height: 120px;
+    border: 10px solid var(--themeColor);
+    border-radius: 50%;
+    background-color: none;
+    box-shadow: skyblue;
+    animation: CircleMove2 10s infinite;
+}
+
+@keyframes CircleMove2 {
+    0% {
+        left: 2%;
+    }
+    50% {
+        left: 10%;
+    }
+    100% {
+        left: 2%;
+    }
+}
+
+.skills .skill-col .skill-item .skill-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skill-col .skill-item .skill-info h4 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.skills .skill-col .skill-item .outer-line {
+    width: 100%;
+    height: 6px;
+    background-color: none;
+    margin: 7px 0;
+}
+
+.skills .skill-col .skill-item .inner-line {
+    height: 6px;
+    width: 0%;
+    background-color: blue;
+    position: relative;
+    transition: width 3s ease-in-out;
+}
+
+.skills .skill-col .skill-item .inner-line::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -6px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* Responsive View */
+@media only screen and (max-width: 730px) {
+    #skills .skill-col {
+        width: 100%;
+    }
+}
+.box{
+    background-size: cover; /* or 'contain' depending on your preference */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.services .box {
+    height: 300px; /* Adjust the height to your preference */
+    padding: 20px; /* Add padding for better aesthetics, adjust as needed */
+    border-radius: 8px; /* Add border-radius for rounded corners, adjust as needed */
+    margin-bottom: 20px; /* Add margin between the boxes, adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Change text color to contrast with the background */
+    text-shadow: #202020;
+}
+
+/* Additional styles for the icon */
+.services .box .s-icons i {
+    font-size: 40px; /* Adjust the icon size as needed */
+    margin-bottom: 20px;
+}
+
+#home {
+    position: relativefixed;
+}
+
+.homepage-image {
+    position: absolute;
+    top: 56px;
+    right: 100px;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+    animation: glow 2s infinite alternate; /* Add the glow animation */
+    box-shadow: 0 0 10px rgba(0, 174, 255, 0.8); /* Initial box shadow */
+}
+
+@keyframes glow {
+    to {
+        box-shadow: 0 0 20px rgba(0, 174, 255, 0.8), 0 0 40px rgba(0, 174, 255, 0.8); /* Adjust the glow effect */
+    }
+}
+
+
+.homepage-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    box-shadow: 100px 100px 10000px skyblue; /* Add a glowing effect */
+}
+
+
+.text-box {
+    max-width: 600px;
+    padding: 30px;
+    background-color: rgba(87, 85, 85, 0.445); /* Adjust background color and opacity */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    z-index: 1; /* Bring the text box to the front */
+    text-align: center;
+}
+
+.services-content .box .text-box {
+    background-color: #f8f8f8a4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services-content .box .text-box h3 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-content .box .text-box p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-content .box .text-box {
+        height: auto; /* Auto height on smaller screens */
+    }
+
+    .services-content .box .text-box h3 {
+        font-size: 20px;
+    }
+
+    .services-content .box .text-box p {
+        font-size: 14px;
+    }
+}
+.skills .h4
+{
+    font-size: 35px;
+    margin-top: none;
+}
+/* Add these styles to your existing CSS file */
+.skills .box {
+    background-size: cover;
+    background-position: center;
+}
+
+.skills .box .skill-col {
+    max-width: 650px;
+}
+
+.skills .box .skill-col .skill-item .skill-info h4 {
+    font-size: 14px; /* Adjust the font size */
+}
+
+.skills .box .skill-col .skill-item .skill-info img {
+    width: 40px; /* Adjust the image width */
+    height: 40px; /* Adjust the image height */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .skills .box .skill-col .skill-item .skill-info h4 {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+
+    .skills .box .skill-col .skill-item .skill-info img {
+        width: 30px; /* Adjust the image width for smaller screens */
+        height: 30px; /* Adjust the image height for smaller screens */
+    }
+}
+.skills .box .heading.center {
+    margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+}
+
+.skills .box .sub-para.center {
+    margin-bottom: none; /* Adjust the margin-bottom value as needed */
+}
+.skills .skill-info .h4
+{
+    margin-top:none ;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em; /* Adjust letter spacing */
+    display: inline-block; /* Ensures it only takes the necessary width */
+}
+
+.typewriter h3 {
+    border-right: 0.15em solid orange; /* Adjust border color and width */
+    animation: typing 3s steps(40, end), blink-caret 0.75s infinite alternate;
+}
+
+@keyframes blink-caret {
+    to { border-color: transparent; }
+}
+/* Global Styles */
+.video-container {
+    box-sizing: border-box;
+    width: 100%; /* Initially take full width */
+    margin-bottom: 20px; 
+    align-items: center;/* Adjust spacing between videos */
+    left: 50px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px; /* Set a fixed height for the videos */
+    align-items: center;
+}
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 600px) {
+    .video-container {
+        width: 48%; /* Adjust the width based on your layout */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .video-container {
+        width: 48%; /* Adjust the width based on your layout */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .video-container {
+        width: 48%; /* Adjust the width based on your layout */
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .video-container {
+        width: 48%; /* Adjust the width based on your layout */
+    }
+}
+/* Video Container Styles */
+
+.video-container-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    box-sizing: border-box;
+    margin: 0 10px; /* Add some margin between the videos if needed */
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .video-container-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px; /* Adjust the height for smaller screens */
+    }
+}
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo styling */
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.logo span {
+    color: #ffcc00; /* Change to your desired color */
+}
+
+/* Navigation list styling */
+.navlist {
+    list-style-type: none;
+    display: flex;
+}
+
+.navlist li {
+    margin-right: 20px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 768px) {
+    .navlist {
+        display: none; /* Hide the navigation list by default on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .navlist.show {
+        display: flex; /* Show the navigation list when menu is clicked */
+    }
+
+    .navlist li {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+}
+
+    .navlist.active {
+        display: flex;
+    }
+
+    .navlist li {
+        margin: 0;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+}
+
+
+.home 
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slide {
+    margin-bottom: 20px;
+}
+
+.one {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+
+.two {
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 500;
+}
+.video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    opacity: 50%;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    /* your content styling */
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+
+}
+
+.home-text h3 {
+    color: rgb(84, 210, 241);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.home-text p {
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 5px #fff;
+}
+.button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 576px) {
+    .about-img img {
+        max-width: 530px;
+    }
+}
+
+@media (min-width: 768px) {
+    .about-img img {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-img img {
+        max-width: 870px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-img img {
+        max-width: 1030px;
+    }
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+    text-align: center;
+}
+
+.about-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+     text-align: center;
+}
+
+.about-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.services {
+    background: var(--second-bg-color);
+
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text p {
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+}
+
+.box {
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.s-icons i {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.box p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.skills-content {
+    margin: 0 auto;
+    margin-top: 35px;
+    max-width: 1000px; /* Adjust the maximum width */
+    width: 100%; /* Use 100% to make it responsive or set a fixed width */
+    box-shadow: none;
+    padding: 40px; /* Adjust the padding */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+.skills-content .box
+{
+    width: 150%;
+    height: auto;
+}
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+
+.row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #00a6ff);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h5 {
+    font: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+
+}
+
+.layer i {
+    color: var(--main-color);
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+.logo-img {
+    width: 64px; /* adjust the width to your liking */
+    height: auto; /* this will maintain the aspect ratio */
+    margin-right: 10px; /* add some space between the logo and the text */
+  }
+  
+  @media (max-width: 768px) {
+    .logo-img {
+      width: 24px; /* adjust the width for smaller screens */
+    }
+  }
+
+.row:hover img {
+    transform: scale(1.1);
+
+}
+
+.row:hover .layer {
+    height: 100%;
+}
+
+.contact {
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contact-text h4 {
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.contact-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.list {
+    margin-bottom: 2.8rem;
+
+}
+
+.list li {
+    margin-bottom: 12px;
+
+}
+
+.list li a {
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all .45s ease;
+}
+
+.list li a:hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+
+}
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+
+    color: var(--main-color);
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 240px;
+}
+
+.contact-form .submit {
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    transition: all .45s ease;
+}
+
+.contact-form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.end {
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.last-text p {
+    color: var(--second-color);
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.top i {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--text-color);
+    background: var(--main-color);
+}
+
+@media (max-width: 1480px) {
+    header {
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+
+    section {
+        padding: 110px 3% 60px;
+    }
+
+    .end {
+        padding: 15px 3%;
+    }
+}
+@media (max-width: 1480px) {
+    header {
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+
+    /* adjust navigation for smaller screens */
+    .nav {
+        display: block; /* hide the navigation */
+    }
+
+    /* add a button to open the navigation on smaller screens */
+    .nav-toggle {
+        display: block;
+    }
+
+    section {
+        padding: 110px 3% 60px;
+    }
+
+    .end {
+        padding: 15px 3%;
+    }
+}
+@media (max-width: 1100px){
+    :root{
+        --big-font:4rem;
+        --h2-font:2.5rem;
+        --p-font:1rem;
+        transition: .1s;
+    }
+    .home-text h3{
+        font-size: 2.5rem;
+    }
+    .home{
+        height: 87vh;
+    }
+}
+@media (max-width:920){
+    .about{
+        grid-template-columns: 1fr;
+
+    }
+    .about-img img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 480px){
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        text-align: left;
+        transition: all .45s ease;
+        display: block;
+        width: 100%;
+        height:auto;
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color);
+    }
+    .navlist a:hover{
+        color: var(--main-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
+}
+
+.skills {
+    padding: 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: url("images/img/img6.jpg"); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.skills .skill-col {
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 650px;
+    background-image: url("images/img/img6.jpg"); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    box-shadow: none;
+    padding: 40px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skills .skill-col .skill-item {
+    width: 100%;
+}
+
+.skills .skill-col .skill-item .skill {
+    position: relative;
+}
+
+.skills .skill-col .skill-item .skill::before {
+    content: '';
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    width: 120px;
+    height: 120px;
+    border: 10px solid var(--themeColor);
+    border-radius: 50%;
+    background-color: none;
+    box-shadow: skyblue;
+    animation: CircleMove2 10s infinite;
+}
+
+@keyframes CircleMove2 {
+    0% {
+        left: 2%;
+    }
+    50% {
+        left: 10%;
+    }
+    100% {
+        left: 2%;
+    }
+}
+
+.skills .skill-col .skill-item .skill-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skill-col .skill-item .skill-info h4 {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.skills .skill-col .skill-item .outer-line {
+    width: 100%;
+    height: 6px;
+    background-color: none;
+    margin: 7px 0;
+}
+
+.skills .skill-col .skill-item .inner-line {
+    height: 6px;
+    width: 0%;
+    background-color: blue;
+    position: relative;
+    transition: width 3s ease-in-out;
+}
+
+.skills .skill-col .skill-item .inner-line::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -6px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid blue;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* Responsive View */
+@media only screen and (max-width: 730px) {
+    #skills .skill-col {
+        width: 100%;
+    }
+}
+.box{
+    background-size: cover; /* or 'contain' depending on your preference */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.services .box {
+    height: 300px; /* Adjust the height to your preference */
+    padding: 20px; /* Add padding for better aesthetics, adjust as needed */
+    border-radius: 8px; /* Add border-radius for rounded corners, adjust as needed */
+    margin-bottom: 20px; /* Add margin between the boxes, adjust as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Change text color to contrast with the background */
+    text-shadow: #202020;
+}
+
+/* Additional styles for the icon */
+.services .box .s-icons i {
+    font-size: 40px; /* Adjust the icon size as needed */
+    margin-bottom: 20px;
+}
+
+#home {
+    position: relativefixed;
+}
+
+.homepage-image {
+    position: absolute;
+    top: 56px;
+    right: 100px;
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+    animation: glow 2s infinite alternate; /* Add the glow animation */
+    box-shadow: 0 0 10px rgba(0, 174, 255, 0.8); /* Initial box shadow */
+}
+
+@keyframes glow {
+    to {
+        box-shadow: 0 0 20px rgba(0, 174, 255, 0.8), 0 0 40px rgba(0, 174, 255, 0.8); /* Adjust the glow effect */
+    }
+}
+
+
+.homepage-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    box-shadow: 100px 100px 10000px skyblue; /* Add a glowing effect */
+}
+
+
+.text-box {
+    max-width: 600px;
+    padding: 30px;
+    background-color: rgba(87, 85, 85, 0.445); /* Adjust background color and opacity */
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    z-index: 1; /* Bring the text box to the front */
+    text-align: center;
+}
+
+.services-content .box .text-box {
+    background-color: #f8f8f8a4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services-content .box .text-box h3 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-content .box .text-box p {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services-content .box .text-box {
+        height: auto; /* Auto height on smaller screens */
+    }
+
+    .services-content .box .text-box h3 {
+        font-size: 20px;
+    }
+
+    .services-content .box .text-box p {
+        font-size: 14px;
+    }
+}
+.skills .h4
+{
+    font-size: 35px;
+    margin-top: none;
+}
+/* Add these styles to your existing CSS file */
+.skills .box {
+    background-size: cover;
+    background-position: center;
+}
+
+.skills .box .skill-col {
+    max-width: 650px;
+}
+
+.skills .box .skill-col .skill-item .skill-info h4 {
+    font-size: 14px; /* Adjust the font size */
+}
+
+.skills .box .skill-col .skill-item .skill-info img {
+    width: 40px; /* Adjust the image width */
+    height: 40px; /* Adjust the image height */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .skills .box .skill-col .skill-item .skill-info h4 {
+        font-size: 12px; /* Adjust the font size for smaller screens */
+    }
+
+    .skills .box .skill-col .skill-item .skill-info img {
+        width: 30px; /* Adjust the image width for smaller screens */
+        height: 30px; /* Adjust the image height for smaller screens */
+    }
+}
+.skills .box .heading.center {
+    margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+}
+
+.skills .box .sub-para.center {
+    margin-bottom: none; /* Adjust the margin-bottom value as needed */
+}
+.skills .skill-info .h4
+{
+    margin-top:none ;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em; /* Adjust letter spacing */
+    display: inline-block; /* Ensures it only takes the necessary width */
+}
+
+.typewriter h3 {
+    border-right: 0.15em solid orange; /* Adjust border color and width */
+    animation: typing 3s steps(40, end), blink-caret 0.75s infinite alternate;
+}
+
+@keyframes blink-caret {
+    to { border-color: transparent; }
+}
+/* Global Styles */
+.video-container {
+    box-sizing: border-box;
+    width: 100%; /* Initially take full width */
+    margin-bottom: 20px; 
+    align-items: center;/* Adjust spacing between videos */
+    left: 50px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px; /* Set a fixed height for the videos */
+    align-items: center;
+}
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 600px) {
+    .video-container {
+        width: 48%; /* Adjust the width based on your layout */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .video-container {
+        width: 48%; /* Adjust the width based on your layout */
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .video-container {
+        width: 48%; /* Adjust the width based on your layout */
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .video-container {
+        width: 48%; /* Adjust the width based on your layout */
+    }
+}
+/* Video Container Styles */
+
+.video-container-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    box-sizing: border-box;
+    margin: 0 10px; /* Add some margin between the videos if needed */
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .video-container-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px; /* Adjust the height for smaller screens */
+    }
+}
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo styling */
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.logo span {
+    color: #00aeff; /* Change to your desired color */
+}
+
+/* Navigation list styling */
+.navlist {
+    list-style-type: none;
+    display: flex;
+}
+
+.navlist li {
+    margin-right: 20px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 768px) {
+    .navlist {
+        display: none; /* Hide the navigation list by default on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .navlist.show {
+        display: flex; /* Show the navigation list when menu is clicked */
+    }
+
+    .navlist li {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+}
